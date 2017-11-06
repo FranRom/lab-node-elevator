@@ -5,4 +5,3 @@ let elevator = new Elevator();
 
 
 elevator.start();
-elevator.floorUp();
