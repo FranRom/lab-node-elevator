@@ -4,7 +4,7 @@ class Elevator {
     this.MAXFLOOR   = 10;
     this.requests   = [];
     this.direction = "up";
-    
+
   }
 
   start() {
@@ -19,6 +19,7 @@ class Elevator {
 
 
   update() {
+
      this.log();
    };
 
@@ -26,9 +27,13 @@ class Elevator {
 
   _passengersLeave() { }
 
-  floorUp() { }
+  floorUp() {
+    this.floor++;
+  }
 
-  floorDown() { }
+  floorDown() {
+     this.floor--;
+   }
 
   call() { }
 
