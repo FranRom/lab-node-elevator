@@ -28,12 +28,16 @@ class Elevator {
   _passengersLeave() { }
 
   floorUp() {
+    if (this.floor < this.MAXFLOOR) {
     this.floor++;
+   };
   }
 
   floorDown() {
-     this.floor--;
-   }
+    if (this.floor > 0) {
+    this.floor--;
+   };
+  }
 
   call() { }
 
